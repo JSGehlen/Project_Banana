@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Banana, because why not?</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+</head>
+<body>
+        <div class="container">
+            <div class="left"></div>
+            <div class="right"></div>
+
+            <div class="nav">
+                <div class="logo">
+                    <p>Banana</p>
+                </div>
+                <div class="want">&nbsp; Want some?</div>
+                <div class="play"><i class="fas fa-play-circle"></i></div>
+            </div>
+            <div class="middle-top-bar">
+                <ul>
+                    <li class="title">Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div class="left-bottom">
+                <p>I don't actually love banana's this much</p>
+            </div>
+
+            <div class="left-sidebar">
+                <h1 class="headline"> Fruit of the gods</h1>
+                <p class="desc">Overly priced at</p>
+                <p id="price">USD 19,99 per kg</p>
+                <button class="btn">BUY NOW</button>
+            </div>
+
+            <div class="product">
+                <img src="banana.png" alt=""banana>
+            </div>
+
+            <div class="rightPattern"></div>
+
+            <div class="media">
+                <ul>
+                    <li><i class="fab fa-facebook-f"></i></li>
+                    <li><i class="fab fa-youtube"></i></li>
+                    <li><i class="fab fa-twitter"></i></li>
+                </ul>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            TweenMax.from(".logo", .3, {
+                delay: .4,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".right", .5, {
+                delay: 1,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".rightPattern", .5, {
+                delay: 1,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".want", .5, {
+                delay: 1.6,
+                opacity: 0,
+                y: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".play", .5, {
+                delay: 1.6,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".left-bottom", .5, {
+                delay: 1.6,
+                opacity: 0,
+                x: -100,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.staggerFrom(".media ul li", .5, {
+                delay: 1.6,
+                opacity: 0,
+                y: 20,
+                ease: Power3.easyInOut
+            }, 0.08);
+
+            TweenMax.from(".middle-top-bar ul li", .3, {
+                delay: 1.6,
+                opacity: 0,
+                y: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".headline", .5, {
+                delay: 1.6,
+                opacity: 0,
+                x: -100,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".desc", .5, {
+                delay: 1.6,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from("#price", .5, {
+                delay: 1.6,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".btn", .5, {
+                delay: 1.6,
+                opacity: 0,
+                z: 0,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".product img", 1, {
+                delay: 1.6,
+                opacity: 0,
+                y: -200,
+                ease: Expo.easyInOut
+            });
+
+            TweenMax.from(".next", 2, {
+                delay: 1.6,
+                opacity: 0,
+                x: -20,
+                ease: Expo.easyInOut
+            });
+        </script>
+</body>
+</html>
